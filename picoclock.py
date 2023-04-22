@@ -237,13 +237,15 @@ while True:
         hour = hour
     else:
         hour = abs(int(hour)) - 12
+    if(minute == 0 or minute == 1 or minute == 2 or minute == 3 or minute == 4 or minute == 5 or minute == 6 or minute == 7 or minute == 8 or minute == 9):
+        minute = "0" + str(minute);
     if(hour <= 9):
         display_text(f"{hour}{minute}", r, g, b)
         time.sleep(30)
     else:
         display_text(f"{hour}", r, g, b)
         time.sleep(15)
-        display_text(f"{minute}", r, g, b)
+        display_text(f" {minute}", r, g, b)
         time.sleep(15)
     
 
