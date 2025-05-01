@@ -1,0 +1,21 @@
+# Build directory inside project folder
+pico-unicorn-clock/build/
+
+# Old C++ project directory (removed)
+# pico-unicorn-clock-c/
+
+# Dependency directories
+pico_deps/
+
+# Ignore root build dir (removed)
+# build/
+
+# Explicitly ignore python file (removed)
+# picoclock.py
+
+# IDE specific files
+.vscode/
+*.code-workspace
+
+# macOS specific files
+.DS_Store 
